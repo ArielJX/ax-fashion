@@ -1,0 +1,470 @@
+/*
+Theme Name: AX Fashion
+*/
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+p {
+  margin: 8px auto;
+}
+
+h1 {
+margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+.max-width-1024{
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
+
+
+header {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10000;
+
+  .navbar {
+      height: 100%;
+      width: 80vw;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      
+      .logo {
+        width: auto;
+        height: 70px;
+      }
+
+      .left-nav,
+      .right-nav {
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        align-items: center;
+      }
+
+      .right-nav{
+        justify-content: flex-end;
+      }
+    }
+}
+
+
+.section{
+  &-fullscreen {
+      width: 100%;
+      height: 100vh;
+
+      .hero-fullscreen {
+          width: 100vw;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+      
+          &_left {
+            width: 50vw;
+            background-color: #ffffff;
+      
+            &__image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+      
+          &_right {
+            width: 50vw;
+            background-color: #417394;
+      
+            &__image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+      
+          h1 {
+            font-size: 260px;
+          }
+      
+          &_image {
+            position: absolute;
+            bottom: 0;
+            width: 700px;
+            height: 115%;
+          }
+        }
+    }
+  &-wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  &-products{
+    margin: 3rem auto;
+    max-width: 1024px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .woocommerce {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .image-wrapper{
+      width: 60%;
+    }
+  }
+  &-cart{
+    margin: 3rem auto;
+    max-width: 1024px;
+    .woocommerce {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.home-title {
+  text-align: center;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 2rem 0;
+}
+
+.row{
+  &-2{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 1rem;
+    
+  }
+  &-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.flex{
+  &-1{
+  flex:1;
+  }
+  &-2{
+    flex: 2;
+  }
+  &-right{
+    width: auto;
+    align-items: flex-end !important;
+    &-wrapper{
+      text-align: center;
+    }
+  }
+}
+
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: Geneva, Tahoma, sans-serif;
+  p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  span{
+    font-size: 12px;
+  }
+  &-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.my{
+  &-2{
+    margin: 2rem auto;
+  }
+  &-4{
+    margin: 4rem auto;
+  }
+}
+
+.mb-1{
+  margin-bottom:1rem;
+}
+
+.card{
+  width: 30%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  
+  &-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 380px;
+    max-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+
+    img {
+      object-fit: cover;
+      width: 80%;
+      height: 80%;
+      border-radius: 4px;
+    }
+  }
+
+  &-title, &-price {
+    font-family: Geneva,Tahoma,sans-serif;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+.button{
+  &-black{
+    background-color: black;
+    border-radius: 8px;
+    width: 120px;
+    position:absolute;
+    bottom: 10vh;
+    left: 12vw;
+
+      p {
+        font-size: 18px;
+        color: white;
+        margin: 8px auto;
+      }
+  }
+  &-white{
+    background-color: white;
+    border-radius: 8px;
+    width: 120px;
+    position: absolute;
+    bottom: 10vh;
+    right: 12vw;
+      p {
+        font-size: 18px;
+        color: black;
+        margin: 8px auto;
+      }
+  }
+  &-highlight{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 20%;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  &-discovery{
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 200px;
+    box-shadow:
+      0 1px 8px 0px rgba(0, 0, 0, 0.22),
+      0 1px 8px 0px rgba(0, 0, 0, 0.34),
+  }
+  &-single{
+    cursor: pointer;
+    width: 220px;
+    height:40px;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow:
+      0 1px 8px 0px rgba(202, 241, 253, 0.22),
+      0 1px 8px 0px rgba(81, 83, 84, 0.34);
+  
+    &_blue{
+      background-color: #EEF4F7;
+      box-shadow:
+        0 1px 8px 0px rgba(202, 241, 253, 0.22),
+        0 1px 8px 0px rgba(81, 83, 84, 0.34),
+    }
+    &_white{
+      background: #ffffff;
+      
+
+    }
+  }
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  &-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+.banner {
+  &-pink {
+    background: #F7EBE8;
+    padding: 3rem 0;
+    margin: 0 auto;
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-blue{
+    background: #EEF4F6;
+    padding: 3rem 0;
+    margin: 0 auto;
+  }
+  &-page{
+    background-color: #417394;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    h3{
+      margin-bottom: 1rem;
+      font-size: 32px;
+      font-weight: 500;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+.wrapper{
+  &-blue{
+    background-color: #EEF4F6;
+  }
+  &-pink{
+    background: #F7EBE8;
+  }
+  
+  &-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  &-subscript{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.woocommerce ul.products li.product {
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  text-align: center;
+
+  img{
+    position: relative;
+  }
+  .button {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    text-align: none;
+  }
+  }
+  
+.section-account .woocommerce {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 3rem auto;
+
+  .woocommerce-MyAccount-navigation {
+    width: 30%;
+    justify-content: center;
+    background: #EEF4F6;
+    
+    ul{
+      padding: 6px 1rem;
+      margin: 6px auto;
+      list-style-type: none;
+      li{
+        padding: 6px 0;
+        border-bottom: 1px solid #417392;
+        
+      }
+    }
+  }
+  .woocommerce-MyAccount-content{
+    width: 600px;
+    padding: 6px 1rem;
+    border: 1px solid #EEF4F6;
+  }
+}
+
+
+
+.single-post{
+  &_title {
+    font-weight: 700;
+    margin: 0 auto 2rem auto;
+  }
+  &_price{
+    font-weight: 700;
+  }
+  &_description{
+    display: block;
+    margin: 1rem 3rem 3rem 3rem;
+  }
+  &_input{
+    height: 40px;
+    width: 40px;
+  }
+}
