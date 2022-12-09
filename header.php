@@ -16,15 +16,15 @@
 <header>
   <div class="navbar max-width-1024">
     <div class="left-nav">
-      <a href="http://ax-fashion.local/" aria-current="page">HOME</a>
-      <a href="http://ax-fashion.local/product-category/dress/" aria-current="page">DRESS</a>
-      <a href="http://ax-fashion.local/product-category/top/" aria-current="page">TOP</a>
-      <a href="http://ax-fashion.local/product-category/skirt/" aria-current="page">SKIRT</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/" aria-current="page">HOME</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/product-category/dress/" aria-current="page">DRESS</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/product-category/top/" aria-current="page">TOP</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/product-category/skirt/" aria-current="page">SKIRT</a>
     </div>
     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" class="logo">
     <div class="right-nav">
-      <a href="http://ax-fashion.local/my-account/" aria-current="page">ACCOUNT</a>
-      <a href="http://ax-fashion.local/cart/" aria-current="page">CART</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/my-account/" aria-current="page">ACCOUNT</a>
+      <a href="https://ariel.xiong.yoobeestudent.net/summative-4/cart/" aria-current="page">CART</a>
     </div>
   </div>
 </header>  
